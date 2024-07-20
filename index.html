@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Equipos de Computación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn6.f-cdn.com/contestentries/66418/10502124/53253062eea63_thumb900.jpg" alt="Logo de la Empresa">
+        <h1>Venta de Equipos de Computación</h1>
+        <form id="ventaForm">
+            <h3>Computadoras</h3>
+            <select id="computadora">
+                <option value="4000">Hp - Q 4000.00</option>
+                <option value="3500">Dell - Q 3500.00</option>
+                <option value="4500">Compaq - Q 4500.00</option>
+                <option value="3800">Samsung - Q 3800.00</option>
+            </select>
+
+            <h3>Impresoras</h3>
+            <select id="impresora">
+                <option value="700">Hp - Q 700.00</option>
+                <option value="500">Dell - Q 500.00</option>
+                <option value="800">Compaq - Q 800.00</option>
+                <option value="600">Samsung - Q 600.00</option>
+            </select>
+
+            <h3>Monitores LCD</h3>
+            <select id="monitor">
+                <option value="2800">Hp - Q 2800.00</option>
+                <option value="2500">Dell - Q 2500.00</option>
+                <option value="3000">Compaq - Q 3000.00</option>
+                <option value="3400">Samsung - Q 3400.00</option>
+            </select>
+
+            <h3>Pago</h3>
+            <input type="number" id="cantidadCancelada" placeholder="Ingrese cantidad cancelada" min="0">
+            <button type="button" onclick="calcularCambio()">Calcular Cambio</button>
+        </form>
+
+        <h2 id="resultado"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
